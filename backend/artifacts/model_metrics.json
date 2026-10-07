@@ -1,0 +1,49 @@
+{
+  "format_version": 1,
+  "dataset": "Keras IMDB",
+  "training_config": {
+    "dataset": "Keras IMDB",
+    "dataset_source": "keras",
+    "development_mode": false,
+    "training_samples": 25000,
+    "test_samples": 25000,
+    "epochs": 5,
+    "batch_size": 128,
+    "validation_split": 0.2,
+    "num_words": 10000,
+    "maxlen": 50,
+    "embedding_dim": 2,
+    "rnn_units": 32,
+    "seed": 42
+  },
+  "best_model": "gru",
+  "models": [
+    {
+      "key": "simple_rnn",
+      "name": "SimpleRNN",
+      "accuracy": 0.78528,
+      "validation_accuracy": 0.7850000262260437,
+      "training_seconds": 13.569039689999954,
+      "epochs": 5,
+      "available": true
+    },
+    {
+      "key": "lstm",
+      "name": "LSTM",
+      "accuracy": 0.78748,
+      "validation_accuracy": 0.7965999841690063,
+      "training_seconds": 25.16348008099999,
+      "epochs": 5,
+      "available": true
+    },
+    {
+      "key": "gru",
+      "name": "GRU",
+      "accuracy": 0.79648,
+      "validation_accuracy": 0.7993999719619751,
+      "training_seconds": 20.659285840999928,
+      "epochs": 5,
+      "available": true
+    }
+  ]
+}
